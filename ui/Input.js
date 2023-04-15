@@ -17,5 +17,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     height: 40,
     width: "80%",
+    paddingLeft: 10,
+    fontStyle: "italic",
+    outlineColor: "#4682b4",
   },
 });

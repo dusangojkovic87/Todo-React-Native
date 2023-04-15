@@ -1,10 +1,15 @@
 import { StyleSheet, View, Text, Pressable } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Todo({ todoText }) {
+  const navigation = useNavigation();
   return (
-    <View style={style.todoStyle}>
+    <Pressable
+      onPress={() => navigation.navigate("details")}
+      style={style.todoStyle}
+    >
       <Text>{todoText}</Text>
-    </View>
+    </Pressable>
   );
 }
 
